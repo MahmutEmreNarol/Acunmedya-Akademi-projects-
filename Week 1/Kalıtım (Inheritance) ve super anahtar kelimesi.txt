@@ -1,0 +1,47 @@
+Kalıtım (Inheritance) ve super anahtar kelimesi 
+
+Kalıtım (Inheritance)  kavramı ve super anahtar kelimesi, sınıfları kullanırken sıkça gördüğümüz ifadelerdir.Kısa bahsetmek gerekişe kalıtım başka bir sınıfta kullandığımız içeriklieri(bunlar özellikler metotlar gibi sınıfın içerdiği ne varsa olabilir) diğer bir sınıfa aktarmaya denir.Super anahtar keliesi ise diğer ııftan aktarılan zelliklein burda tnımlanmasına yarar.
+
+Kalıtım (Inheritance), bir sınıfın  başka bir sınıftan özellik ve metotları devralmasını sağlar. Bu, nesne yönelimli programlamada önemli bir kavramdır çünkü bir sınıf, başka bir sınıfın özelliklerini ve davranışlarını yeniden kullanabilir ve gerektiğinde bunları değiştirebilir.Kalıtım (Inheritance)  kavramını anlatmak için  miras almak ifadesini kullanmak Kalıtım (Inheritance)  kavramını tam anlamı ile açıklıyor yani aslen bir sınıfın değerli görülen içerilerini bir diğer sınıfın kullanmasını sağlıyor,aynı bir öocuğun aiesinden kalanları kullanması gibi 
+
+TypeScript'te kalıtım, extends anahtar kelimesiyle sağlanır. Bir sınıf, başka bir sınıfı miras alarak onun özelliklerine ve metotlarına erişebilir.
+
+Kalıtım (Inheritance) kavramı ve super anahtar kelimesi, sınıfları kullanırken sıkça karşılaştığımız ifadelerdir. Kısa bir şekilde bahsetmek gerekirse, kalıtım başka bir sınıfta kullandığımız içerikleri (bunlar özellikler, metotlar gibi sınıfın içerdiği ne varsa) başka bir sınıfa aktarmaya denir. super anahtar kelimesi ise, diğer sınıftan aktarılan özelliklerin burada tanımlanmasına yarar.
+
+Kalıtım (Inheritance), bir sınıfın başka bir sınıftan özellik ve metotları devralmasını sağlar. Bu, nesne yönelimli programlamada önemli bir kavramdır çünkü bir sınıf, başka bir sınıfın özelliklerini ve davranışlarını yeniden kullanabilir ve gerektiğinde bunları değiştirebilir. Kalıtım (Inheritance) kavramını anlatmak için "miras almak" ifadesini kullanmak, kalıtım kavramını tam anlamıyla açıklıyor. Yani, bir sınıfın değerli görülen içeriklerini başka bir sınıfın kullanmasını sağlamak, tıpkı bir çocuğun ailesinden kalanları kullanması gibi.
+
+TypeScript'te kalıtım, extends anahtar kelimesiyle sağlanır. Bir sınıf, başka bir sınıfı miras alarak onun özelliklerine ve metotlarına erişebilir. 
+
+Super anahtar kelimesi, kalıtım (inheritance) ile ilişkili bir özelliktir ve türetilmiş sınıflarda, veya üst sınıfın özelliklerine ve metotlarına erişim sağlamak için kullanılır. super, özellikle bir alt sınıf  içinde, üst sınıfın constructor'ını veya metodlarını çağırmak için kullanılır.
+
+
+
+Kalıtım (Inheritance), bir sınıfın başka bir sınıftan özellik ve metotları devralmasını sağlar. Bu, nesne yönelimli programlamada önemli bir kavramdır çünkü bir sınıf, başka bir sınıfın özelliklerini ve davranışlarını yeniden kullanabilir ve gerektiğinde bunları değiştirebilir. Kalıtım (Inheritance) kavramını anlatmak için "miras almak" ifadesini kullanmak, kalıtımın anlamını tam olarak açıklıyor. Yani, bir sınıfın değerli görülen içeriklerini başka bir sınıfın kullanmasını sağlamak, tıpkı bir çocuğun ailesinden kalanları kullanması gibidir.
+
+TypeScript'te kalıtım, extends anahtar kelimesiyle sağlanır. Bir sınıf, başka bir sınıfı miras alarak onun özelliklerine ve metotlarına erişebilir.
+
+Kalıtım (Inheritance) kavramı ve super anahtar kelimesi, sınıfları kullanırken sıkça karşılaşılan ifadelerdir. Kısaca bahsetmek gerekirse, kalıtım, bir sınıfta kullandığımız içerikleri (özellikler, metotlar gibi) başka bir sınıfa aktarmaya denir. super anahtar kelimesi ise, başka bir sınıftan aktarılan özelliklerin burada tanımlanmasına yardımcı olur.
+
+super anahtar kelimesi, kalıtım (inheritance) ile ilişkili bir özelliktir ve türetilmiş sınıflarda, üst sınıfın özelliklerine ve metotlarına erişim sağlamak için kullanılır. super, özellikle bir alt sınıf içinde, üst sınıfın constructor'ını veya metodlarını çağırmak için kullanılır.
+
+Sonuç olarak, TypeScript'teki kalıtım (Inheritance) ve super anahtar kelimesi, nesne yönelimli programlamada büyük bir öneme sahiptir .Özllikle de sınıfların sıklıkla birbirleri ile bağlantılı çalıştıklarını düşünürsek bu kavramarı derinlemesine bilmek programlamacının işini ziyadesiyle kolaylaştırıyor.
+
+
+
+
+
+
+
+
+
+
+
+Kalıtım (Inheritance), bir sınıfın başka bir sınıftan özellik ve metotları devralmasını sağlar. Bu, nesne yönelimli programlamada önemli bir kavramdır çünkü bir sınıf, başka bir sınıfın özelliklerini ve davranışlarını yeniden kullanabilir ve gerektiğinde bunları değiştirebilir. Kalıtım (Inheritance) kavramını anlatmak için "miras almak" ifadesini kullanmak, kalıtımın anlamını tam olarak açıklıyor. Yani, bir sınıfın değerli görülen içeriklerini başka bir sınıfın kullanmasını sağlamak, tıpkı bir çocuğun ailesinden kalanları kullanması gibidir.
+
+TypeScript'te kalıtım, extends anahtar kelimesiyle sağlanır. Bir sınıf, başka bir sınıfı miras alarak onun özelliklerine ve metotlarına erişebilir.
+
+Kalıtım (Inheritance) kavramı ve super anahtar kelimesi, sınıfları kullanırken sıkça karşılaşılan ifadelerdir. Kısaca bahsetmek gerekirse, kalıtım, bir sınıfta kullandığımız içerikleri (özellikler, metotlar gibi) başka bir sınıfa aktarmaya denir. super anahtar kelimesi ise, başka bir sınıftan aktarılan özelliklerin burada tanımlanmasına yardımcı olur.
+
+super anahtar kelimesi, kalıtım (inheritance) ile ilişkili bir özelliktir ve türetilmiş sınıflarda, üst sınıfın özelliklerine ve metotlarına erişim sağlamak için kullanılır. super, özellikle bir alt sınıf içinde, üst sınıfın constructor'ını veya metodlarını çağırmak için kullanılır.
+
+Sonuç olarak, TypeScript'teki kalıtım (Inheritance) ve super anahtar kelimesi, nesne yönelimli programlamada büyük bir öneme sahiptir. Özellikle sınıfların sıklıkla birbirleriyle bağlantılı çalıştıklarını düşünürsek, bu kavramları derinlemesine bilmek programlamacının işini ziyadesiyle kolaylaştırır.

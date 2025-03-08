@@ -1,0 +1,61 @@
+arrow func ve klasik funcların incelenmesi ve aralarında ki farklar
+
+Arrow func bizim alıştığımız klasik fonksiyon tanımlamasına bir alternatif bir kısayol olarak çıkmıştır.Fonksiyonlar genel manada parametre alarak yada almayarak kendilerine verilen işi , yerie geitren bir nevi bir işi tekrar yapmaktan bizi kurtaran ifadelerdir.Arrow fonksiyon ise alıştığımız klasik fonksiypn tanımlamasına farklı bir yorum katarak dha kısa ve bazı açılardan daha farklı bir yaklaşım ortaya koyuştur şimdi bunları inceleyelim.
+1. Sözdizimi (Syntax)
+
+Arrow function, klasik fonksiyona kıyasla daha kısa ve okunaklı bir yazıma sahiptir. Klasik fonksiyonlar function anahtar kelimesiyle tanımlanırken, arrow function (=>) doğrudan => sembolü ile oluşturulur.
+2. this Bağlamı
+
+Arrow function'lar, this bağlamını bulunduğu kapsama göre belirler (lexical this). Yani, fonksiyonun çağrıldığı yer değil, tanımlandığı yer önemlidir. Buna karşın klasik fonksiyonlar, çağrıldığı bağlama göre this değerini dinamik olarak belirler.
+3. return Kullanımı
+
+Arrow function’lar tek satırlık ifadelerde {} kullanılmazsa otomatik olarak return döner. Klasik fonksiyonlarda ise her zaman return ifadesinin yazılması gerekir.
+
+4. Nesne Döndürme
+
+Eğer bir arrow function doğrudan bir nesne döndürmek isterse, {} süslü parantezler nedeniyle return kullanılmazsa hata verir. Bunu önlemek için nesne () parantezleri içine alınmalıdır. Klasik fonksiyonlarda böyle bir gereklilik yoktur.
+5. Nesne İçinde Metot Olarak Kullanım
+
+Arrow function’lar nesne içindeki metotlar olarak kullanıldığında this bağlamı kaybolur ve genellikle beklenmedik hatalara neden olur. Klasik fonksiyonlar ise this değerini nesneye bağlayarak doğru çalışır.
+
+Sonuç olarak her iki ifade de oldukça kulanışlıdır iyi bir porgmracı iki fadeyi de çok iyi bir biçimde bilmeli ve etkin bir şekilde kullanmalıdır
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Arrow Function ve Klasik Fonksiyonların İncelenmesi ve Aralarındaki Farklar
+
+Arrow function, klasik fonksiyon tanımlamalarına bir alternatif olarak ortaya çıkmış, daha kısa ve okunaklı bir sözdizimi sunan bir fonksiyon yazım şeklidir. Fonksiyonlar genel olarak belirli bir işlemi yerine getiren ve tekrar eden kod yazımını azaltan yapılar olup, arrow function’lar bazı açılardan klasik fonksiyonlardan farklı davranışlar sergiler.
+
+1. Sözdizimi (Syntax)
+Arrow function, klasik fonksiyonlara kıyasla daha kısa bir yazım sunar. Klasik fonksiyonlar function anahtar kelimesiyle tanımlanırken, arrow function doğrudan => sembolü ile oluşturulur.
+
+2. this Bağlamı
+Arrow function’lar, this bağlamını tanımlandığı yere göre belirler ve bulunduğu kapsama bağlı kalır (lexical this). Klasik fonksiyonlarda ise this, fonksiyonun çağrıldığı bağlama göre değişir ve dinamik olarak belirlenir.
+
+3. return Kullanımı
+Arrow function’lar tek satırlık ifadelerde süslü parantez {} kullanılmazsa otomatik olarak return döndürür. Klasik fonksiyonlarda ise return ifadesinin açıkça belirtilmesi gerekir.
+
+4. Nesne Döndürme
+Arrow function ile doğrudan bir nesne döndürmek için parantez () içine alınması gerekir. Aksi takdirde süslü parantez {} nedeniyle hata oluşur. Klasik fonksiyonlarda ise böyle bir gereklilik yoktur.
+
+5. Nesne İçinde Metot Olarak Kullanım
+Arrow function’lar, nesne içinde metot olarak kullanıldığında this bağlamını koruyamaz ve genellikle beklenmedik hatalara neden olur. Klasik fonksiyonlar ise this değerini nesneye bağlayarak sorunsuz şekilde çalışır.
+
+Sonuç
+Her iki fonksiyon türü de belirli senaryolarda avantajlıdır. Daha kısa ve okunaklı bir sözdizimi için arrow function tercih edilirken, this bağlamının korunması gereken durumlarda klasik fonksiyonlar daha güvenilir bir seçenektir. Etkili bir programcı, her iki fonksiyon türünü de iyi bilerek doğru yerde kullanmalıdır.
+
+.

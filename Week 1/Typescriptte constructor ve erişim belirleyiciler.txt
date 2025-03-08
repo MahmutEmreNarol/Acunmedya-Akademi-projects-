@@ -1,0 +1,18 @@
+TypeScritte Counstractor ve Erişim belirleyiciler
+
+Özellikle Nesne yönelimli programlamada karşımıza çıkan bu kavramlar Nesne yönelimli programlama açısından çok büyük bir öneme sahiptir.
+Detayına girmeden yüzeysel olarak bahsetmek gerekirse constructor sınıfın içinde nesne oluşturulduğunda otomatik olarak çalışır ve sınıfın içinde tanımlanan özelliği otomatik olarak doldurur 
+TypeScript'te Constructor ve Erişim Belirleyiciler
+
+Özellikle nesne temelli programlamada karşımıza çıkan bu kavramlar, nesne yönelimli programlama açısından çok büyük bir öneme sahiptir. Detayına girmeden yüzeysel olarak bahsetmek gerekirse, constructor sınıfın içinde bir örnek (instance) oluşturulduğunda otomatik olarak çalışır ve sınıfın içinde tanımlanan özellikleri başlatır.Erişim belirleyiciler ise tanımlanan özelliğin kimler tarafından ve nerelerde erişilebileceğine dair sınırlar koyar kodun okunabilirliği ve güvenliği açısından kritik öneme sahiptir .Şimdi biraz daha detaylı bir şekilde inceleyelim
+
+Constructor: Sınıfın bir örneği oluşturulurken otomatik olarak çağrılır. Bu, sınıfın özelliklerini başlatmak için kullanılır. TypeScript'te, constructor metodu genellikle sınıfın başlangıç durumunu belirlemek amacıyla kullanılır.
+
+Erişim Belirleyiciler: TypeScript, sınıfın üyelerine (özellikler ve metotlar) erişim sağlarken bazı kurallar koymak için erişim belirleyicileri kullanır. Başlıca erişim belirleyiciler şunlardır:
+
+public: Özellik veya metodun her yerden erişilebilir olmasını sağlar. Herhangi bir erişim belirleyici kullanılmadığı takdirde otomatik olarak public kabul edilir 
+private: Özellik veya metodun yalnızca sınıfın içinde erişilebilir olmasını sağlar.
+protected: Özellik veya metodun sadece sınıf içinde ve bu sınıfı miras alan alt sınıflarda erişilebilir olmasını sağlar.
+
+Sonuç olarak constructor ve erişim belirleyiciler TypeScript'teki nesne yönelimli programlamanın temel taşlarıdır. Constructor bir şekilde her sınıfın içinde kullanıldığı için dikkat edilse de Erişim Belirleyiciler gözden kaçabiliyor bunlara dikkat etmek hem güvenilirlik hem okunabilirlik açısından oldukça önemlidir
+
