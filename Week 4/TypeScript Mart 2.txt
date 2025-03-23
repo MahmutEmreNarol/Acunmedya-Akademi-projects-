@@ -1,0 +1,94 @@
+ Backend API Routes (pagesapicategories.ts)
+import { NextApiRequest, NextApiResponse } from 'next';
+
+let categories = [{ id 1, name 'Technology' }, { id 2, name 'Health' }];
+
+export default function handler(req NextApiRequest, res NextApiResponse) {
+    if (req.method === 'GET') {
+        res.status(200).json(categories);
+    } else if (req.method === 'POST') {
+        const { name } = req.body;
+        const newCategory = { id Date.now(), name };
+        categories.push(newCategory);
+        res.status(201).json(newCategory);
+    } else if (req.method === 'PUT') {
+        const { id, name } = req.body;
+        categories = categories.map(cat = cat.id === id  { ...cat, name }  cat);
+        res.status(200).json({ message 'Category updated' });
+    } else if (req.method === 'DELETE') {
+        const { id } = req.body;
+        categories = categories.filter(cat = cat.id !== id);
+        res.status(200).json({ message 'Category deleted' });
+    } else {
+        res.status(405).json({ message 'Method not allowed' });
+    }
+}
+
+ Frontend Category List Component (componentsCategoryList.tsx)
+import { useEffect, useState } from 'react';
+
+export default function CategoryList() {
+    const [categories, setCategories] = useState([]);
+    const [newCategory, setNewCategory] = useState('');
+    const [editingCategory, setEditingCategory] = useState(null);
+    const [editingName, setEditingName] = useState('');
+
+    useEffect(() = {
+        fetch('apicategories')
+            .then(res = res.json())
+            .then(data = setCategories(data));
+    }, []);
+
+    const addCategory = async () = {
+        const res = await fetch('apicategories', {
+            method 'POST',
+            headers { 'Content-Type' 'applicationjson' },
+            body JSON.stringify({ name newCategory }),
+        });
+        const data = await res.json();
+        setCategories([...categories, data]);
+        setNewCategory('');
+    };
+
+    const updateCategory = async (id) = {
+        await fetch('apicategories', {
+            method 'PUT',
+            headers { 'Content-Type' 'applicationjson' },
+            body JSON.stringify({ id, name editingName }),
+        });
+        setCategories(categories.map(cat = cat.id === id  { ...cat, name editingName }  cat));
+        setEditingCategory(null);
+        setEditingName('');
+    };
+
+    const deleteCategory = async (id) = {
+        await fetch('apicategories', {
+            method 'DELETE',
+            headers { 'Content-Type' 'applicationjson' },
+            body JSON.stringify({ id }),
+        });
+        setCategories(categories.filter(cat = cat.id !== id));
+    };
+
+    return (
+        div
+            h1Categoriesh1
+            ul
+                {categories.map(cat = (
+                    li key={cat.id}
+                        {editingCategory === cat.id  (
+                            input value={editingName} onChange={(e) = setEditingName(e.target.value)} 
+                        )  (
+                            span{cat.name}span
+                        )}
+                        button onClick={() = setEditingCategory(cat.id)  setEditingName(cat.name)}Editbutton
+                        button onClick={() = updateCategory(cat.id)}Savebutton
+                        button onClick={() = deleteCategory(cat.id)}Deletebutton
+                    li
+                ))}
+            ul
+            input value={newCategory} onChange={(e) = setNewCategory(e.target.value)} 
+            button onClick={addCategory}Add Categorybutton
+        div
+    );
+}
